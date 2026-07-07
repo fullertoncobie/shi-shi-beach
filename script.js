@@ -14,7 +14,7 @@ const revealObserver = new IntersectionObserver(
       entry.target.classList.add("in-view");
     });
   },
-  { threshold: 0.2, rootMargin: "0px 0px -8% 0px" }
+  { threshold: 0.12, rootMargin: "0px 0px -14% 0px" }
 );
 
 revealEls.forEach((el) => revealObserver.observe(el));
